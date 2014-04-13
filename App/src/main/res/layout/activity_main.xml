@@ -9,6 +9,8 @@
         android:id="@+id/list_view"
         android:background="@color/blue"
         android:layout_width="match_parent"
-        android:layout_height="400dp"/>
+        android:layout_height="400dp"
+        tools:listitem="@layout/row_item_layout"
+        tools:listheader="@layout/header_layout"/>
 
 </FrameLayout>

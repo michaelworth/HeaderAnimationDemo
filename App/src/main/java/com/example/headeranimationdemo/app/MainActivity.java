@@ -56,7 +56,7 @@ public class MainActivity extends ActionBarActivity {
 
         listView.addHeaderView(headerView);
 
-        listView.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,
+        listView.setAdapter(new ArrayAdapter<>(this, R.layout.row_item_layout,
                 new String[]{"Item 1", "Item 2", "Item 3", "Item 4"}));
     }
 
