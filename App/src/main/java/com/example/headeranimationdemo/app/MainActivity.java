@@ -80,7 +80,8 @@ public class MainActivity extends ActionBarActivity {
                 headerView.setLayoutParams(layoutParams);
 
                 lastAnimationUpdateTime = System.nanoTime();
-                Log.i(TAG, "AnimationUpdate @ " + lastAnimationUpdateTime);
+                //Log.i(TAG, "layoutParams: height= " + layoutParams.height);
+                //Log.i(TAG, "AnimationUpdate @ " + lastAnimationUpdateTime);
             }
 
             @Override
@@ -137,7 +138,8 @@ public class MainActivity extends ActionBarActivity {
                 layoutParams.height = (Integer) valueAnimator.getAnimatedValue();
                 headerView.setLayoutParams(layoutParams);
                 lastAnimationUpdateTime = System.nanoTime();
-                Log.i(TAG, "AnimationUpdate @ " + lastAnimationUpdateTime);
+                //Log.i(TAG, "layoutParams: height= " + layoutParams.height);
+                //Log.i(TAG, "AnimationUpdate @ " + lastAnimationUpdateTime);
             }
         });
 
