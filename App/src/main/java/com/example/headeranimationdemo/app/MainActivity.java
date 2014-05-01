@@ -72,7 +72,7 @@ public class MainActivity extends ActionBarActivity {
         AlphaAnimation alphaAnimation = new AlphaAnimation(1, 0);
         alphaAnimation.setDuration(400);
 
-        Animation translationAnimation = new Animation() {
+        Animation heightChangeAnimation = new Animation() {
 
             @Override
             protected void applyTransformation(float interpolatedTime, Transformation t) {
@@ -90,15 +90,14 @@ public class MainActivity extends ActionBarActivity {
             }
         };
 
-        translationAnimation.setDuration(400);
-        translationAnimation.setStartOffset(300);
+        heightChangeAnimation.setDuration(400);
+        heightChangeAnimation.setStartOffset(300);
 
         AnimationSet set = new AnimationSet(true);
         set.setInterpolator(new AccelerateDecelerateInterpolator());
         set.addAnimation(alphaAnimation);
-        set.addAnimation(translationAnimation);
-        set.setFillAfter(true);
-
+        set.addAnimation(heightChangeAnimation);
+        
         set.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
